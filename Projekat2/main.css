@@ -1,0 +1,292 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: inherit;
+
+}
+
+body {
+    font-family: 'Montserrat',
+        sans-serif;
+    background-color: rgb(197, 61, 61);
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+
+    background-color: #ffffff;
+    padding: 10px 20px 10px 20px;
+}
+
+
+.border-under-nav {
+    border-bottom: 3px solid #f30000;
+
+
+}
+
+nav img {
+    height: 50px;
+    width: 50px;
+
+}
+
+.navigacija a {
+    margin-left: 50px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transform: 100ms;
+    font-weight: 500;
+}
+
+.navigacija a:hover {
+    padding-bottom: 5px;
+    border-bottom: solid 2px #000000;
+    border-radius: 2px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.main-container {
+    height: 100vh;
+    background: url('/Projekat2/asset/container-main.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.white-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 750px;
+
+    border-radius: 8px;
+    border: 1px solid #ffffffb2;
+
+}
+
+
+.new{
+    position: absolute;
+    
+z-index: 1;
+
+
+}
+.new > .n1{
+   
+    left: -350px;
+    top: -20px;
+    transform: translate(-50, -50%);
+    background: linear-gradient(#000000, #000000cb, #00000000);
+    font-size: 40px;
+    position: relative;
+    color: #f70000;
+transform: rotate(-30deg);
+font-weight:bolder;
+
+}
+
+.new > .n2 {
+  
+    left: 45px;
+    top: 430px;
+    transform: translate(-50, -50%);
+    background: linear-gradient(#000000, #000000cb, #00000000);
+    font-size: 40px;
+    position: relative;
+    color: #f70000;
+    transform: rotate(-30deg);
+    font-weight: bolder;
+
+}
+
+
+
+
+
+.page2{
+    background-color: #000000;
+   
+    position: relative;
+display: flex;
+
+padding-top: 150px;
+padding-bottom: 180px;
+
+justify-content: center;
+
+}
+
+
+
+.product{
+    
+display: flex;
+justify-content: space-between;
+width: 750px;
+position: relative;
+flex-wrap: wrap;
+gap: 45px;
+align-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+.strana {
+    
+    height: 450px;
+    width: 350px;
+   outline: 0.5px solid rgba(255, 255, 255, 0.685);
+    position: relative;
+}
+
+
+
+
+.product  img{
+height: 450px;
+width: 350px;
+opacity: 0.8;
+position: absolute;
+
+
+}
+
+
+.product img:hover {
+    height: 450px;
+    width: 350px;
+    opacity: 1;
+    background-size: cover;
+
+}
+
+
+
+
+.para{
+color: #ffffff;
+left: 0px;
+right: 0px;
+bottom: 0px;
+padding: 15px;
+text-align: center;
+background: linear-gradient(#e6646400, #000000cb, #000000);
+position: absolute;
+font-weight: bold;
+font-size: 30px;
+font-style:oblique;
+}
+
+
+
+
+
+
+
+.white-box2 {
+    height: 300px;
+    width: 650px;
+
+    border-radius: 8px;
+    border: 2px solid #ffffff77;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(240, 248, 255, 0.288);
+}
+
+
+
+.white-box2 button {
+
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    background-color: #00000000;
+    border-radius: 4px;
+    border: solid 3px #000000;
+    padding: 15px;
+    color: #000000;
+    opacity: 0;
+    transition: 200ms;
+}
+
+.white-box2 button:hover {
+
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    background-color: #00000000;
+    border-radius: 4px;
+    border: solid 3px #000000;
+    padding: 15px;
+    color: #000000;
+    opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.social a {
+    margin-right: 20px;
+
+}
+
+
+
+footer p {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.US a {
+    color: #f70000;
+    font-size: 20px;
+    text-decoration: none;
+}
