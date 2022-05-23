@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -313,5 +317,265 @@ h2 {
 
 .paragraf-o-nama, .dimenzije, .psuluge {
   margin-bottom: 25px;
+}
+
+#proizvodi h2 {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.matrica {
+  margin-top: 40px;
+  height: 500px;
+  display: -ms-grid;
+  display: grid;
+  grid-template: "a b c" "d b e" "f f g";
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#proizvod-a {
+  grid-area: a;
+}
+
+#proizvod-b {
+  grid-area: b;
+}
+
+#proizvod-c {
+  grid-area: c;
+}
+
+#proizvod-d {
+  grid-area: d;
+}
+
+#proizvod-e {
+  grid-area: e;
+}
+
+#proizvod-f {
+  grid-area: f;
+}
+
+#proizvod-g {
+  grid-area: g;
+}
+
+.proizvod {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "region";
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+.proizvod img {
+  grid-area: region;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  height: 100%;
+  width: 100%;
+}
+
+.proizvod .text-holder {
+  color: #ffffff;
+  grid-area: region;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  -ms-grid-row-align: stretch;
+      align-self: stretch;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  font-size: 20px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, from(#def7fd00), color-stop(#def7fda1), to(#def7fd));
+  background: linear-gradient(#def7fd00, #def7fda1, #def7fd);
+  opacity: 0.0;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.proizvod .text-holder:hover {
+  opacity: 1;
+}
+
+.text-holder a {
+  color: #2c2c2c;
+  text-decoration: none;
+  padding-bottom: -10px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.text-holder:hover {
+  color: #202020;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+#Karijera h2 {
+  padding-top: 50px;
+}
+
+.career-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.job-list {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+}
+
+.job-list label {
+  display: block;
+  margin-bottom: 10px;
+  border: 1px solid #a1a1a1;
+  padding: 8px;
+  font-weight: bold;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.job-descriptionS {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+}
+
+.job-descriptionS input {
+  display: none;
+}
+
+.job-descriptionS .job-description {
+  display: none;
+}
+
+.job-descriptionS input:checked + .job-description {
+  display: block;
+}
+
+.job-description {
+  margin-left: 20px;
+  border: 1px solid #b3b1b1;
+  padding: 15px;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.job-description h3, p, ul {
+  padding-bottom: 10px;
+}
+
+.job-description li {
+  margin-left: 20px;
+  padding-bottom: 5px;
+}
+
+.kontakt-region {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "adrese mapa" "mejlovi mapa";
+  -ms-grid-columns: 300px 1fr;
+      grid-template-columns: 300px 1fr;
+}
+
+.kontakt-adrese {
+  padding-bottom: 15px;
+  grid-area: adrese;
+  font-size: 14px;
+}
+
+.kontakt-mejlovi {
+  font-size: 14px;
+  grid-area: mejlovi;
+}
+
+.kontakt-mejlovi a {
+  color: red;
+  text-decoration: none;
+}
+
+.kontakt-mejlovi a:hover {
+  color: #1d29ce;
+}
+
+.kontakt-map {
+  grid-area: mapa;
+}
+
+.footer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  border-top: 3px solid black;
+}
+
+.footer .foo {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.footer > .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.foo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+}
+
+.leva-strana {
+  text-align: left;
+  font-size: 12px;
+}
+
+.centar-strana {
+  font-size: 12px;
+  text-align: center;
+}
+
+.desna-strana {
+  font-size: 12px;
+  text-align: right;
+}
+
+.desna-strana a {
+  color: #1b1b1b;
+  text-decoration: none;
+}
+
+.desna-strana a:hover {
+  color: red;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

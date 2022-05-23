@@ -1,0 +1,65 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: monospace
+}
+
+:root {
+
+    --main-bg1-color: #30af70;
+    --main-bg2-color: #c4822c;
+    --nesto: rgb(141, 101, 101);
+
+}
+
+.test1, .test2, .test3 {
+    width: 150px;
+    height: 150px;
+   display: inline-block;
+  
+}
+
+
+
+.test1{
+    background-color: var(--main-bg1-color);
+/* transform: rotate(30deg); */
+
+}
+
+.test1:hover {
+    background-color: var(--main-bg1-color);
+  
+}
+
+.test2 {
+    background-color: var(--main-bg2-color);
+  transition: 1s all;
+transform: skew(0deg);
+}
+.test2:hover {
+    background-color: var(--main-bg2-color);
+    transform: skew(40deg);
+}
+
+
+
+.test3 {
+    background-color: var(--nesto);
+transform: skewy(0);
+transition: 1s all;
+}
+
+
+
+
+.test3:hover {
+    background-color: var(--nesto);
+   
+
+    transform: skewx(-40deg);
+}
+
