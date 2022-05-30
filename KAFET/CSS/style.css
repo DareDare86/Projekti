@@ -1,0 +1,165 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+===========
+ fontovi sa google font
+  ? -je if
+  css? ako je familija = "naziv fonta"
+| drgi font
+===========
+
+/* @import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&family=Kalam:wght@300;400;700&display=swap");
+
+/* 
+======
+variable
+root
+set pravila
+========
+*/
+
+:root {
+  --clr-bg-primary: #f1f5f8;
+  --clr-bg-white: #fff;
+  --clr-bg-footer: #222222;
+
+  /* jacina siva -1..-5..-10..nijanse */
+  --clr-grey-1: #102a42;
+  --clr-grey-5: #617d98;
+  --clr-grey-10: #f1f5f8;
+
+  --clr-primary: #6d4927;
+  --clr-primary-light: #c78648;
+
+  --btn-clr-primary: #709943;
+  --btn-clr-hover: #beed8c;
+
+  --font-clr1: #617d98;
+  --font-clr2: #678e3e;
+
+  /* FF font family */
+  --FF-primary: "Catamaran", sans-serif;
+  --FF-secondary: "Kalam", cursive;
+
+  /* tranzicije animacije */
+  --transition: all 0.3s linear;
+
+  /* Po default- 16px =1rem */
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+
+body {
+  font-family: var(--FF-primary);
+  background: var(--clr-bg-white);
+  color: var(--clr-grey-1);
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+/* =================
+navbar
+==============
+*/
+
+/* ==========
+HEADER
+=============
+*/
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/KAFET/assets/Banner-photo/lesly-juarez-NOVO.png") center/cover
+      no-repeat fixed;
+
+  /* animation */
+  position: relative;
+}
+
+.banner {
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner h2 {
+  font-family: var(--FF-secondary);
+  color: var(--clr-primary-light);
+  font-size: 1.8rem;
+
+  /* animation */
+}
+
+.banner h1 {
+  text-transform: uppercase;
+  /* margin-top: 1.25rem; */
+  margin-bottom: 2rem;
+  line-height: 3.8rem;
+  font-size: 3rem;
+  /* animation */
+}
+
+.banner-btn {
+  font-size: 1.25rem;
+  padding: 1rem 1.75rem;
+
+  outline: 2px solid #c78548;
+  outline-offset: 0.3rem;
+  transition: 0.1s linear;
+  letter-spacing: 0.15rem;
+}
+
+.btn {
+  background-color: var(--clr-primary-light);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  letter-spacing: 0.15rem;
+  display: inline-block;
+  font-weight: 700;
+
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0.2);
+}
+
+.btn:hover {
+  background-color: var(--clr-primary);
+  outline: 2px solid var(--clr-primary);
+}
